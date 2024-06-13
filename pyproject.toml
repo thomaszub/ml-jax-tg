@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "jax-tg"
+version = "0.1.0"
+description = ""
+authors = ["Thomas Zub <thomas.zub@outlook.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.12"
+jax = {extras = ["cpu"], version = "^0.4.28"}
+equinox = "^0.11.4"
+optax = "^0.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.2.1"
+ruff = "^0.4.8"
+pandas = "^2.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
