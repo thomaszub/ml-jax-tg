@@ -17,6 +17,7 @@ optax = "^0.2.3"
 jupyterlab = "^4.2.4"
 ruff = "^0.4.10"
 pandas = "^2.2.2"
+matplotlib = "^3.9.1"
 
 [build-system]
 requires = ["poetry-core"]
