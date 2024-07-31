@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - "main"
+
+  pull_request:
+    branches:
+      - "main"
+
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install poetry
+        run: pipx install poetry
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.12
+          cache: 'poetry'
+
+      - name: Setup Poetry
+        run: |
+          poetry config virtualenvs.create true --local
+          poetry config virtualenvs.in-project true --local
+
+      - name: Install dependencies
+        run: poetry install
+
+      - name: Run basic notebook
+        run: poetry run jupyter execute notebooks/basic.ipynb
