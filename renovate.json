@@ -4,6 +4,7 @@
     "config:recommended",
     ":pinAllExceptPeerDependencies",
     ":automergeAll",
-    ":automergeBranch"
+    ":automergeBranch",
+    ":maintainLockFilesWeekly"
   ]
 }
