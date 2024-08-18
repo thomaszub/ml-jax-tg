@@ -589,17 +589,17 @@ files = [
 
 [[package]]
 name = "equinox"
-version = "0.11.4"
+version = "0.11.5"
 description = "Elegant easy-to-use neural networks in JAX."
 optional = false
 python-versions = "~=3.9"
 files = [
-    {file = "equinox-0.11.4-py3-none-any.whl", hash = "sha256:a9527b1fe0c4778c3c959d9091b1eea28c3fdcca01790a47e71b47df94889315"},
-    {file = "equinox-0.11.4.tar.gz", hash = "sha256:0033d9731083f402a855b12a0777a80aa8507651f7aa86d9f0f9503bcddfd320"},
+    {file = "equinox-0.11.5-py3-none-any.whl", hash = "sha256:470e93b7f6a47ae794e350a702b1931ca80eb2efebdbea997be3a8d6172acb4e"},
+    {file = "equinox-0.11.5.tar.gz", hash = "sha256:5e0ca252eeb20cc5eece225d3d35137c7e57f998a1c6422a1972db9e5c68b7f6"},
 ]
 
 [package.dependencies]
-jax = ">=0.4.13"
+jax = ">=0.4.13,<0.4.27 || >0.4.27"
 jaxtyping = ">=0.2.20"
 typing-extensions = ">=4.5.0"
 
@@ -2942,4 +2942,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.12"
-content-hash = "f52bb89b4d82cc4949558f823e9cdf7e632aed2b36fd61e62a2d93e68e26c1ec"
+content-hash = "3f72698458a241b7373f178b366774f5c42e66da024fd02d3709cc424d31975e"
