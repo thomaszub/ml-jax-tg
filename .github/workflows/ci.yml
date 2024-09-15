@@ -18,22 +18,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install poetry
-        run: pipx install poetry
+      - name: Install uv
+        uses: astral-sh/setup-uv@v2
+        with:
+          version: "0.4.10"
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
 
       - name: Install Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: 3.12
-          cache: 'poetry'
+        run: uv python install 3.12
 
-      - name: Setup Poetry
-        run: |
-          poetry config virtualenvs.create true --local
-          poetry config virtualenvs.in-project true --local
-
-      - name: Install dependencies
-        run: poetry install
-
+      - name: Setup environment
+        run: uv sync
+  
       - name: Run basic notebook
-        run: poetry run jupyter execute notebooks/basic.ipynb
+        run: uv run jupyter execute notebooks/basic.ipynb
