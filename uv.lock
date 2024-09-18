@@ -332,16 +332,16 @@ wheels = [
 
 [[package]]
 name = "equinox"
-version = "0.11.6"
+version = "0.11.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jax" },
     { name = "jaxtyping" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9e/25/551cd234d40762862d20d99df4555cc20aba3571d1a5be5e73efdf3749ff/equinox-0.11.6.tar.gz", hash = "sha256:e237c25e446960ed479f086df240d4dd779bb0917bafc76811d341ccac76b712", size = 139278 }
+sdist = { url = "https://files.pythonhosted.org/packages/3b/48/ed7ba0849bea18b8be49f471b8e597ca6e5975f75ed05c3be84c1e0ef7c4/equinox-0.11.7.tar.gz", hash = "sha256:96e0216a9d822ec4b1465b0cbfbab14a36fb7e7d62c55f521287db3aaaa251be", size = 139909 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/84/cb/a51ab01035c6992d22f1a7fa811d2f610f3fe5ef57eefd84fe52764cf176/equinox-0.11.6-py3-none-any.whl", hash = "sha256:ea1120057a1b907a1cdbaed0ed6ba8e70728ae1fc31e1ddad778af1e18f864c0", size = 177693 },
+    { url = "https://files.pythonhosted.org/packages/00/3f/2fa4627a902a38cd836aa8f7e5a0753114bb23d6b4d2a73784dd9f5ff2e6/equinox-0.11.7-py3-none-any.whl", hash = "sha256:1177354e1795061fbad71535fe54096d8887dc059b4ab7d400fea2d47dfaa283", size = 178416 },
 ]
 
 [[package]]
@@ -541,7 +541,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "equinox", specifier = "==0.11.6" },
+    { name = "equinox", specifier = "==0.11.7" },
     { name = "jax", extras = ["cpu"], specifier = "==0.4.33" },
     { name = "optax", specifier = "==0.2.3" },
 ]

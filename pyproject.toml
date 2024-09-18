@@ -7,7 +7,7 @@ readme = "README.md"
 package-mode = false
 requires-python = ">=3.12"
 dependencies = [
-    "equinox==0.11.6",
+    "equinox==0.11.7",
     "jax[cpu]==0.4.33",
     "optax==0.2.3",
 ]
