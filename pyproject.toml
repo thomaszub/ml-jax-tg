@@ -17,5 +17,5 @@ dev-dependencies = [
     "jupyterlab==4.2.5",
     "matplotlib==3.9.2",
     "pandas==2.2.3",
-    "ruff==0.7.0",
+    "ruff==0.7.1",
 ]
